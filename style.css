@@ -1,0 +1,156 @@
+html{
+    background-color: black;
+}
+.interphase{
+    display: flex;
+    gap: 2px;
+    align-items: first baseline;
+    justify-content: center;
+}
+
+                              /* <!--.............. LEFT INTERPHASE ..................................--> */
+
+.left{
+    width :24vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: black;
+    border-radius: 6px;
+}
+.box1{
+    height: 130px;
+    width: 22vw;
+    border-radius: 6px;
+    background-color: rgb(19, 19, 19);
+}
+.box1 a{
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-left: 5px;
+    color: white;
+}
+.box1 li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.logo{
+    width : 90px;
+    filter: invert(1);
+}
+.home,.search{
+    width: 25px;
+    vertical-align:middle;
+    margin-right: 12px;
+    filter: invert(1);
+}
+.box2{
+    border-radius: 6px;
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    background-color: rgb(19,19,19);
+}
+.top{
+    padding: 16px;
+    box-sizing: border-box;
+}
+.top a{
+    position: relative;
+    font-size: 16px;
+    font-weight: bolder;
+    text-decoration: none;
+    left: 5px;
+    color: white;
+}
+.top img{
+    vertical-align: middle;
+    width: 22px;
+    filter: invert(1);
+}
+.lib{
+    margin-right: 10px
+}
+.plus{
+    margin-left: 55px
+}
+.scroll{
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+    overflow-y: scroll;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+}
+.scroll b{
+    font-weight: bolder;
+    font-size: 22px;
+    color: white;
+}
+.scroll div{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: white;
+}
+.scroll button{
+    height: 40px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: white;
+    border: none;
+}
+
+                              /* <!--.............. Right INTERPHASE ..................................--> */
+
+.right{
+    width: 72vw;
+    border: 2px solid rgb(19,19,19);
+    border-radius: 6px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-around;
+    gap: 40vw;
+    background-color: rgb(19,19,19);
+}
+.icon{
+    display: flex;
+    gap: 20px;
+}
+.icon img{
+    width: 20px;
+    filter: invert(0.7);
+    border: 1px solid;
+    border-radius: 18px;
+    padding: 6px;
+}
+.sl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.sl button{
+    border: 2px;
+    width: 90px;
+    height: 45px;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: large;
+} 
+.s{
+    color: rgb(169, 176, 174);
+    background-color: rgb(19,19,19);
+}
+.l{
+    background-color: white;
+}
