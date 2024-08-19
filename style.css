@@ -1,5 +1,6 @@
 html{
     background-color: black;
+    overflow: scroll;
 }
 .interphase{
     display: flex;
@@ -15,6 +16,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     background-color: black;
     border-radius: 6px;
@@ -29,8 +31,10 @@ html{
     font-size: 20px;
     font-weight: bolder;
     text-decoration: none;
-    margin-left: 5px;
     color: white;
+}
+.box1 a:hover{
+    font-size: 21px;
 }
 .box1 li{
     margin-bottom: 10px;
@@ -49,6 +53,7 @@ html{
 .box2{
     border-radius: 6px;
     width: 22vw;
+    height: 365px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -58,45 +63,54 @@ html{
 .top{
     padding: 16px;
     box-sizing: border-box;
+    position: relative;
+    right: 25px;
 }
 .top a{
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bolder;
     text-decoration: none;
     left: 5px;
     color: white;
+}
+.top a:hover{
+    font-size: 16px;
 }
 .top img{
     vertical-align: middle;
     width: 22px;
     filter: invert(1);
 }
-.lib{
-    margin-right: 10px
-}
 .plus{
-    margin-left: 55px
+    position: relative;
+    left: 40px;
 }
 .scroll{
-    height: 55px;
+    height: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 7vh;
     overflow-y: scroll;
     text-align: center;
+    background-color: rgb(19,19,19);
+}
+.first,.second{
     background-color: rgb(40, 40, 40);
+    width: 19vw;
+    border-radius: 8px;
+    padding: 10px 0px 10px 0px;
+    box-sizing: border-box;
+    margin-top: 25px;
 }
 .scroll b{
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 18px;
     color: white;
 }
 .scroll div{
-    margin-top: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: white;
+    font-size: 14px;
 }
 .scroll button{
     height: 40px;
@@ -106,21 +120,52 @@ html{
     background-color: white;
     border: none;
 }
+.scroll button:hover{
+    background-color: rgb(163, 255, 255);
+}
+.end{
+    height: 220px;
+    width: 22vw;
+}
+.links a{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: lighter;
+}
+.links li{
+    list-style-type: none;
+}
+.links a:hover{
+    font-weight: bold;
+}
+#one{
+    position: relative;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 5px;
+    left: 30px;
+    top: 15px;
+    height: 35px;
+}
 
                               /* <!--.............. Right INTERPHASE ..................................--> */
 
 .right{
+    height: 510px;
     width: 72vw;
-    border: 2px solid rgb(19,19,19);
+    /* border: 2px solid rgb(255, 255, 255); */
     border-radius: 6px;
+    box-sizing: border-box;
 }
 nav{
     display: flex;
     align-items: center;
     height: 50px;
     justify-content: space-around;
-    gap: 40vw;
+    gap: 30vw;
     background-color: rgb(19,19,19);
+    border-radius: 6px;
 }
 .icon{
     display: flex;
@@ -141,8 +186,8 @@ nav{
 }
 .sl button{
     border: 2px;
-    width: 90px;
-    height: 45px;
+    width: 80px;
+    height: 40px;
     border-radius: 30px;
     font-weight: bolder;
     font-size: large;
@@ -151,6 +196,49 @@ nav{
     color: rgb(169, 176, 174);
     background-color: rgb(19,19,19);
 }
+.s:hover{
+    color: rgb(232, 228, 228); ;
+}
 .l{
     background-color: white;
+}
+.l:hover{
+    background-color: rgb(221, 240, 255);
+}
+footer{
+    background-color: rgb(195, 104, 255);
+    width: 95vw;
+    border-radius: 6px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20vw;
+    margin: 12px auto;
+    box-sizing: border-box;
+}
+.det a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+.det a :hover{
+    color: rgb(121, 255, 255);
+}
+footer button{
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    font-weight: bolder;
+    width: 120px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+footer button:hover{
+    background-color: aqua;
+}
+@media screen and (max-width:800px){
 }
