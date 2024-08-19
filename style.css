@@ -4,9 +4,8 @@ html{
 }
 .interphase{
     display: flex;
-    gap: 2px;
-    align-items: first baseline;
     justify-content: center;
+    align-items: center;
 }
 
                               /* <!--.............. LEFT INTERPHASE ..................................--> */
@@ -17,7 +16,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
     background-color: black;
     border-radius: 6px;
 }
@@ -52,8 +51,8 @@ html{
 }
 .box2{
     border-radius: 6px;
+    height: 340px;
     width: 22vw;
-    height: 365px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -64,14 +63,12 @@ html{
     padding: 16px;
     box-sizing: border-box;
     position: relative;
-    right: 25px;
+    right: 20px;
 }
 .top a{
-    position: relative;
     font-size: 15px;
     font-weight: bolder;
     text-decoration: none;
-    left: 5px;
     color: white;
 }
 .top a:hover{
@@ -84,7 +81,7 @@ html{
 }
 .plus{
     position: relative;
-    left: 40px;
+    left: 38px;
 }
 .scroll{
     height: 60px;
@@ -124,7 +121,6 @@ html{
     background-color: rgb(163, 255, 255);
 }
 .end{
-    height: 220px;
     width: 22vw;
 }
 .links a{
@@ -145,16 +141,15 @@ html{
     border-radius: 20px;
     padding: 5px;
     left: 30px;
-    top: 15px;
     height: 35px;
 }
 
                               /* <!--.............. Right INTERPHASE ..................................--> */
 
 .right{
-    height: 510px;
+    height: 482px;
     width: 72vw;
-    /* border: 2px solid rgb(255, 255, 255); */
+    border: 1px solid white;
     border-radius: 6px;
     box-sizing: border-box;
 }
@@ -165,7 +160,8 @@ nav{
     justify-content: space-around;
     gap: 30vw;
     background-color: rgb(19,19,19);
-    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .icon{
     display: flex;
@@ -213,9 +209,11 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 20vw;
-    margin: 12px auto;
+    gap: 22vw;
+    margin: 8px auto;
     box-sizing: border-box;
+    position: relative;
+    left: 4px;
 }
 .det a{
     display: flex;
@@ -224,7 +222,7 @@ footer{
     text-decoration: none;
     padding: 3px;
 }
-.det a :hover{
+.det a:hover{
     color: rgb(121, 255, 255);
 }
 footer button{
