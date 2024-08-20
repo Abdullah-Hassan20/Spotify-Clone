@@ -1,6 +1,8 @@
 html{
     background-color: black;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .interphase{
     display: flex;
@@ -51,7 +53,7 @@ html{
 }
 .box2{
     border-radius: 6px;
-    height: 340px;
+    height: 360px;
     width: 22vw;
     display: flex;
     flex-direction: column;
@@ -88,6 +90,8 @@ html{
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     text-align: center;
     background-color: rgb(19,19,19);
 }
@@ -147,11 +151,12 @@ html{
                               /* <!--.............. Right INTERPHASE ..................................--> */
 
 .right{
-    height: 482px;
+    height: 502px;
     width: 72vw;
-    border: 1px solid white;
     border-radius: 6px;
     box-sizing: border-box;
+    background-color: rgb(28, 28, 28);
+    border-radius: 6px;
 }
 nav{
     display: flex;
@@ -200,6 +205,132 @@ nav{
 }
 .l:hover{
     background-color: rgb(221, 240, 255);
+}
+.theme{
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 440px;
+}
+.artists,.albums,.charts,.radio{
+    height: 280px;
+}
+.up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40vw;
+}
+.up a{
+    text-decoration: none;
+    color: white;
+}
+.up a:hover{
+    text-decoration:underline;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+.cards button .m,.cards button .a{
+    margin-top: 15px;
+    margin-bottom: 4px;
+}
+.cards p{
+    width: 130px;
+    text-align: start;
+}
+.m{
+    width: 125px;
+    height: 130px;
+    border-radius: 100px;
+}
+.a{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+}
+.cards button{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border: none;
+}
+.play {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    background-color: rgb(32, 136, 32);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 55px;
+    opacity: 0;
+}
+.cards button:hover{
+    background-color: rgb(40, 40, 40);
+    .play{
+        opacity: 1;
+        position: absolute;
+        bottom: 65px;
+        transition: ease-in 0.2s;
+    }
+}
+.all{
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+    height: 300px;
+    color: white;
+    margin-top: 30px;
+}
+.all li{
+    list-style-type: none;
+}
+.all a{
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+.all a:hover{
+    text-decoration: underline;
+}
+.line{
+    width: 65vw;
+    margin: auto;
+    border: 0.5px solid rgb(163, 163, 163);
+    position: relative;
+    bottom: 60px;
+}
+.b-line img{
+    filter: invert(1);
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.b-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 10vw;
+    position: relative;
+    bottom: 20px;
+}
+
+
+.a1 b,.a1 p{
+    position: relative;
+    left: 10px;
 }
 footer{
     background-color: rgb(195, 104, 255);
