@@ -1,14 +1,47 @@
 html{
     background-color: black;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 .interphase{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    margin-top: 10px;
+    gap: 4px;
+}
+.subscription{
+    width: 95vw;
+    border-radius: 6px;
+    background-color: wheat;
+    height: 90px;
+    position: relative;
+    margin: auto;
+    left: 5px;
+}
+.material{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    width: 80vw;
+}
+.subscription button{
+    width: 94px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    bottom: 65px;
+    font-size: 13px;
+    height: 25px;
+    color: white;
+    background-color: black;
+}
+.subscription h2{
+    position: relative;
+    bottom: 15px;
+}
+.subscription p{
+    position: relative;
+    bottom: 52px;
 }
 
                               /* <!--.............. LEFT INTERPHASE ..................................--> */
@@ -28,6 +61,7 @@ html{
     width: 22vw;
     border-radius: 6px;
     background-color: rgb(19, 19, 19);
+    border: 1px solid white;
 }
 .box1 a{
     font-size: 20px;
@@ -54,19 +88,22 @@ html{
 }
 .box2{
     border-radius: 6px;
-    height: 360px;
+    height: 760px;
     width: 22vw;
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
     background-color: rgb(19,19,19);
+    border: 1px solid white;
 }
 .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 16px;
     box-sizing: border-box;
-    position: relative;
-    right: 20px;
+    height: 400px;
 }
 .top a{
     display: flex;
@@ -74,6 +111,38 @@ html{
     font-size: 16px;
     font-weight: bolder;
     text-decoration: none;
+    color: white;
+}
+.songs_l{
+    overflow: auto;
+    scrollbar-width: none;
+    align-items: center;
+    width: 20vw;
+    height: 350px;
+    border-radius: 6px;
+    background-color: rgb(34, 34, 34);
+}
+.songs_l ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top li{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 20px;
+    color: white;
+    width: 17vw;
+    margin: 5px 0;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: rgb(22, 22, 22);
+    cursor: pointer;
+}
+
+.top h4{
     color: white;
 }
 .top a:hover{
@@ -84,15 +153,11 @@ html{
     width: 22px;
     filter: invert(1);
 }
-.plus{
-    position: relative;
-    left: 38px;
-}
 .scroll{
-    height: 60px;
+    height: 140px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     text-align: center;
@@ -155,12 +220,13 @@ html{
                               /* <!--.............. Right INTERPHASE ..................................--> */
 
 .right{
-    height: 502px;
+    height: 900px;
     width: 72vw;
     border-radius: 6px;
     box-sizing: border-box;
     background-color: rgb(28, 28, 28);
     border-radius: 6px;
+    border: 1px solid white;
 }
 nav{
     display: flex;
@@ -212,11 +278,10 @@ nav{
     background-color: rgb(221, 240, 255);
 }
 .theme{
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    height: 440px;
+    height: 780px;
 }
 .artists,.albums,.charts,.radio{
     height: 280px;
@@ -334,6 +399,51 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.state{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+}
+.playbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10vw;
+    width: 70vw;
+    margin: auto;
+    height: 35px; 
+    background-color: rgb(10, 10, 10);
+    border-radius: 6px;
+    position: relative;
+    top: 25px;
+}
+.name,.time{
+    color: white;
+    padding: 5px;
+}
+.length{
+    background-color: white;
+    width: 65vw;
+    height: 1px;
+    margin: auto;
+    position: relative;
+    top: 23px;
+    cursor: pointer;
+}
+.circle{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    bottom: 3px;
+    left: 0%;
+}
+.playbar img{
+    filter: invert(1);
+    cursor: pointer;
 }
 .b-line img{
     filter: invert(1);
