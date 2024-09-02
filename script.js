@@ -1,7 +1,7 @@
 console.log('Write js')
 let current_song=new Audio()
 async function getsongs(){
-    let b = await fetch("http://192.168.1.14:3000/Spotify-clone/songs")
+    let b = await fetch("/Spotify-clone/songs")
     let response=await b.text()
     let div=document.createElement("div")
     div.innerHTML=response
@@ -64,6 +64,13 @@ async function main(){
         let percentage=(e.offsetX/e.target.getBoundingClientRect().width)*100
         document.querySelector(".circle").style.left=percentage+"%"
         current_song.currentTime=(current_song.duration*percentage)/100
+    })
+
+    document.querySelector(".menu").addEventListener("click",()=>{
+        document.querySelector(".left").style.left=0
+    })
+    document.querySelector(".cross").addEventListener("click",()=>{
+        document.querySelector(".left").style.left="-100%"
     })
 }
 

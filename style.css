@@ -1,12 +1,16 @@
-html{
+body{
     background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .interphase{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    gap: 4px;
+    position: relative;
+    top: 66px;
+    gap: 2px;
 }
 .subscription{
     width: 95vw;
@@ -52,7 +56,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     background-color: black;
     border-radius: 6px;
 }
@@ -61,7 +65,14 @@ html{
     width: 22vw;
     border-radius: 6px;
     background-color: rgb(19, 19, 19);
-    border: 1px solid white;
+}
+.cross1{
+    display: flex;
+}
+.cross{
+    display: none;
+    filter: invert(1);
+    width: 18px;
 }
 .box1 a{
     font-size: 20px;
@@ -95,7 +106,6 @@ html{
     gap: 15px;
     align-items: center;
     background-color: rgb(19,19,19);
-    border: 1px solid white;
 }
 .top{
     display: flex;
@@ -220,34 +230,39 @@ html{
                               /* <!--.............. Right INTERPHASE ..................................--> */
 
 .right{
-    height: 900px;
+    height: 895px;
     width: 72vw;
     border-radius: 6px;
     box-sizing: border-box;
     background-color: rgb(28, 28, 28);
     border-radius: 6px;
-    border: 1px solid white;
 }
 nav{
     display: flex;
     align-items: center;
     height: 50px;
-    justify-content: space-around;
-    gap: 30vw;
+    justify-content: space-between;
     background-color: rgb(19,19,19);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 .icon{
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
-.icon img{
+.menu{
+    filter: invert(1);
+    display: none;
+    width: 35px;
+}
+.il,.ir{
     width: 20px;
+    height: 20px;
     filter: invert(0.7);
     border: 1px solid;
-    border-radius: 18px;
+    border-radius: 100px;
     padding: 6px;
+    margin-left: 20px;
 }
 .sl{
     display: flex;
@@ -282,9 +297,14 @@ nav{
     -ms-overflow-style: none;
     scrollbar-width: none;
     height: 780px;
+    position: relative;
 }
 .artists,.albums,.charts,.radio{
     height: 280px;
+}
+.albums,.charts,.radio{
+    position: relative;
+    bottom: 15px;
 }
 .up{
     display: flex;
@@ -306,6 +326,8 @@ nav{
     overflow-x: scroll;
     -ms-overflow-style: none; 
     scrollbar-width: none;
+    position: relative;
+    bottom: 15px;
 }
 .cards button .m,.cards button .a{
     margin-top: 15px;
@@ -326,11 +348,12 @@ nav{
     border-radius: 10px;
 }
 .cards button{
+    margin-left: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
     border-radius: 6px;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(21, 21, 21);
     color: white;
     border: none;
 }
@@ -349,7 +372,7 @@ nav{
     opacity: 0;
 }
 .cards button:hover{
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(10, 10, 10);
     .play{
         opacity: 1;
         position: absolute;
@@ -393,6 +416,7 @@ nav{
     align-items: center;
     color: white;
     gap: 10vw;
+    z-index: 1;
 }
 .app{
     display: flex;
@@ -400,51 +424,7 @@ nav{
     align-items: center;
     gap: 10px;
 }
-.state{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    gap: 10px;
-}
-.playbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10vw;
-    width: 70vw;
-    margin: auto;
-    height: 35px; 
-    background-color: rgb(10, 10, 10);
-    border-radius: 6px;
-    position: relative;
-    top: 25px;
-}
-.name,.time{
-    color: white;
-    padding: 5px;
-}
-.length{
-    background-color: white;
-    width: 65vw;
-    height: 1px;
-    margin: auto;
-    position: relative;
-    top: 23px;
-    cursor: pointer;
-}
-.circle{
-    width: 7px;
-    height: 7px;
-    background-color: white;
-    border-radius: 100px;
-    position: relative;
-    bottom: 3px;
-    left: 0%;
-}
-.playbar img{
-    filter: invert(1);
-    cursor: pointer;
-}
+
 .b-line img{
     filter: invert(1);
     width: 20px;
@@ -463,19 +443,77 @@ nav{
 .b-line .c:hover{
     background-color: rgb(60, 60, 60);
 }
+.playbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 95.2vw;
+    top: 98px;
+    position: absolute;
+    left: 1.5vw;
+    background-color: rgb(19, 19, 19);
+    margin: auto;
+    border-radius: 6px;
+    z-index: 1;
+}
+.arrange{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20vw;
+    padding: 5px;
+    margin: 8px 0px;
+    background-color: rgb(39, 39, 39);
+    width: 80vw;
+    border-radius: 6px;
+}
+.state{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+}
+.name,.time{
+    color: white;
+    padding: 5px;
+}
+.length{
+    background-color: white;
+    width: 70vw;
+    height: 1px;
+    margin: auto;
+    position: relative;
+    top: -9px;
+    cursor: pointer;
+}
+.circle{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    bottom: 3px;
+    left: 0%;
+}
+.playbar img{
+    filter: invert(1);
+    cursor: pointer;
+}
 footer{
     background-color: rgb(195, 104, 255);
-    width: 95vw;
+    width: 94.7vw;
     border-radius: 6px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 22vw;
-    margin: 8px auto;
     box-sizing: border-box;
+    margin: auto;
     position: relative;
-    left: 4px;
+    top: 70px;
+    left: 2px;
 }
 .det a{
     display: flex;
